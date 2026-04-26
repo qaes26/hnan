@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملخص حنان لتخطي الامتحان</title>
+    <!-- استدعاء خطوط جوجل (Tajawal) لخط عربي جميل ومقروء -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- استدعاء مكتبة Tailwind CSS للتصميم -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a8a', // أزرق داكن
+                        secondary: '#d97706', // ذهبي/برتقالي داكن
+                        accent: '#f3f4f6', // رمادي فاتح
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* خلفية الكتب وتأثير الزجاج (Glassmorphism) */
+        body {
+            /* صورة خلفية لكتب ومكتبة */
+            background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2000&auto=format&fit=crop');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .overlay {
+            background-color: rgba(15, 23, 42, 0.75); /* غطاء داكن لضمان قراءة النص */
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            width: 50%;
+            height: 3px;
+            background-color: #d97706;
+            border-radius: 2px;
+        }
+
+        /* تنسيق القوائم */
+        ul.custom-list {
+            list-style: none;
+            padding-right: 0;
+        }
+        ul.custom-list li {
+            position: relative;
+            padding-right: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        ul.custom-list li::before {
+            content: '📌';
+            position: absolute;
+            right: 0;
+            top: 2px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased selection:bg-secondary selection:text-white">
+
+    <div class="overlay py-12 px-4 sm:px-6 lg:px-8">
+        
+        <!-- الحاوية الرئيسية -->
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- الهيدر (عنوان الملخص) -->
+            <header class="text-center mb-12">
+                <div class="inline-block glass-card px-8 py-6 rounded-2xl border-t-4 border-secondary">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-2 tracking-tight">ملخص حنان لتخطي الامتحان</h1>
+                    <p class="text-lg text-gray-600 font-medium mb-4">مادة إدارة المعرفة - التركيز على النقاط الهامة</p>
+                    <div class="pt-4 border-t border-gray-200">
+                        <p class="text-primary font-bold flex items-center justify-center gap-2">
+                            <span>🎓</span> إعداد: <span class="text-secondary">قيس الجازي</span>
+                        </p>
+                        <p class="text-gray-600 font-medium text-sm mt-1">
+                            إشراف: ابراهيم وحمزه
+                        </p>
+                    </div>
+                </div>
+            </header>
+
+            <main class="space-y-8">
+
+                <!-- 1. خصائص المعرفة -->
+                <section class="glass-card rounded-2xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-primary section-title">خصائص المعرفة (ص 8) <span class="text-sm text-red-500 font-normal bg-red-100 px-2 py-1 rounded ml-2">هام جداً</span></h2>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <ul class="custom-list text-gray-700">
+                            <li><strong class="text-primary">يمكن أن تولد:</strong> عبر الأفراد المبتكرين في الشركة.</li>
+                            <li><strong class="text-primary">يمكن أن تموت أو تضيع:</strong> تموت بموت الشخص أو إحلال معرفة جديدة، وتضيع بالفشل في تخزينها.</li>
+                            <li><strong class="text-primary">يمكن أن تمتلك:</strong> تحولها المؤسسات إلى براءات اختراع وأسرار تجارية.</li>
+                            <li><strong class="text-primary">متجذرة في الأفراد:</strong> ليست كلها صريحة بل توجد معرفة فطرية في رؤوس الأفراد.</li>
+                            <li><strong class="text-primary">التراكمية:</strong> تتجدد بإضافة معارف جديدة للقديمة.</li>
+                        </ul>
+                        <ul class="custom-list text-gray-700">
+                            <li><strong class="text-primary">قابلة للتخزين:</strong> في وثائق، أشرطة، حواسيب.</li>
+                            <li><strong class="text-primary">قابلة للتطبيق:</strong> يجسدها صاحبها في أعماله.</li>
+                            <li><strong class="text-primary">عدم نضوب المعرفة:</strong> استعمالها ونقلها لا يؤدي لنفاذها بل تزداد.</li>
+                            <li><strong class="text-primary">قابلة للاستنساخ:</strong> يمكن عمل نسخ منها بتكاليف منخفضة.</li>
+                            <li><strong class="text-primary">الدقة والتجريد والتعليل:</strong> مبنية على دقة ووقائع ولكل حدث مسبب.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 2. أهمية المعرفة -->
+                <section class="glass-card rounded-2xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-primary section-title">أهمية المعرفة (ص 10) <span class="text-sm text-red-500 font-normal bg-red-100 px-2 py-1 rounded ml-2">هام جداً</span></h2>
+                    <ul class="custom-list text-gray-700">
+                        <li>أسهمت في <strong class="text-secondary">مرونة المنظمات</strong> باعتماد تصميمات أكثر مرونة.</li>
+                        <li>تتيح للمنظمة التركيز في المجالات الأكثر <strong class="text-secondary">إبداعاً وابتكاراً</strong>.</li>
+                        <li>تحول المنظمة إلى <strong class="text-secondary">مجتمعات معرفية</strong> تتكيف مع التغير المتسارع.</li>
+                        <li>المعرفة البشرية هي <strong class="text-secondary">المصدر الأساسي للقيمة</strong>.</li>
+                        <li>ترشد المدراء لكيفية إدارة منظماتهم بفعالية.</li>
+                        <li>تعتبر العنصر الفعال لخلق <strong class="text-secondary">الميزة التنافسية</strong> وإدامتها.</li>
+                    </ul>
+                </section>
+
+                <!-- 3. أنواع المعرفة -->
+                <section class="glass-card rounded-2xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-primary section-title">أنواع المعرفة (ص 10 - 13)</h2>
+                    
+                    <div class="mb-6 border-b pb-4">
+                        <h3 class="font-bold text-lg text-secondary mb-2">1. تصنيف Marquardt:</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            (ماذا Know-what) / (كيف Know-how) / (لماذا Know-why) / (أين Know-where) / (متى Know-when).
+                        </p>
+                    </div>
+
+                    <div class="mb-6 border-b pb-4">
+                        <h3 class="font-bold text-lg text-secondary mb-2">2. تصنيف Zack:</h3>
+                        <ul class="custom-list text-gray-700">
+                            <li><strong class="text-primary">المعرفة الجوهرية (Core):</strong> الحد الأدنى المطلوب ولا يضمن ميزة طويلة الأمد.</li>
+                            <li><strong class="text-primary">المعرفة المتقدمة (Advanced):</strong> تجعل المؤسسة تتمتع بقابلية التنافس والتميز.</li>
+                            <li><strong class="text-primary">المعرفة الابتكارية (Innovation):</strong> تمكن المؤسسة من قيادة الصناعة والتفوق الكبير على المنافسين.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-lg text-secondary mb-3">3. تصنيف Nonaka (الأكثر استخداماً):</h3>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                                <h4 class="font-bold text-primary mb-2">المعرفة الصريحة (Explicit)</h4>
+                                <p class="text-sm text-gray-700">موثقة، رسمية، مهيكلة. يمكن التعبير عنها بالكلمات والأرقام ونقلها بسهولة (مستندات، قواعد بيانات، أدلة).</p>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-lg border border-orange-100">
+                                <h4 class="font-bold text-primary mb-2">المعرفة الضمنية (Tacit)</h4>
+                                <p class="text-sm text-gray-700">غير رسمية، قاطنة في عقول الأفراد (خبرات، حدس، مهارات). يصعب توثيقها ونقلها، وتنتقل بالتفاعل والمناقشات.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. مواقع توافر المعرفة -->
+                <section class="glass-card rounded-2xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-primary section-title">مواقع توافر المعرفة (ص 14)</h2>
+                    <ul class="custom-list text-gray-700">
+                        <li><strong class="text-primary">المعرفة لدى الموظفين:</strong> تشمل الأفراد (خبراتهم) والجماعات (المعرفة التعاونية التي تفوق المعرفة الفردية).</li>
+                        <li><strong class="text-primary">الأشياء أو المصنعات:</strong> الممارسات، الروتين التنظيمي، التقنيات، قواعد البيانات، والوثائق الورقية أو الإلكترونية.</li>
+                    </ul>
+                    <div class="mt-4 p-3 bg-red-50 border-r-4 border-red-500 text-red-700 text-sm font-bold rounded">
+                        ملاحظة: تم استبعاد الصفحات من 15 إلى 16 بناءً على التعليمات (غير مطلوبة).
+                    </div>
+                </section>
+
+                <!-- 5. مصادر المعرفة -->
+                <section class="glass-card rounded-2xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-primary section-title">مصادر المعرفة (ص 17)</h2>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1">
+                            <h3 class="font-bold text-secondary mb-2 flex items-center"><span class="text-xl ml-2">📥</span> المصادر الداخلية</h3>
+                            <p class="text-gray-700">تشمل المعرفة الضمنية لاكتساب المعرفة (خبرات الأفراد، معتقداتهم، مذكراتهم). صعبة النقل ولكن منافعها كثيرة للمنظمة.</p>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-secondary mb-2 flex items-center"><span class="text-xl ml-2">📤</span> المصادر الخارجية</h3>
+                            <p class="text-gray-700">الاقتداء بالمنظمات، المؤتمرات، الخبراء، شبكة الإنترنت، الزبائن، المنافسين، الموردين، والتحالفات.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. تعريف إدارة المعرفة -->
+                <section class="glass-card rounded-2xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-primary section-title">تعريف إدارة المعرفة (ص 18)</h2>
+                    <p class="text-gray-700 mb-3">عملية منظمة للبحث عن المعلومات واختيارها وتنظيمها وتصنيفها بطريقة تزيد من مستوى فهم العاملين لها وتخزينها، للحفاظ على الأصول الفكرية من الضياع.</p>
+                    <p class="text-gray-700">هي <strong class="text-secondary">مجموعة من العمليات المترابطة</strong> (الحصول، التخزين، الاسترجاع، التقاسم، التطبيق) لتعظيم كفاءة رأس المال الفكري وتحقيق ميزة تنافسية.</p>
+                </section>
+
+                <!-- 7. مبررات التحول -->
+                <section class="glass-card rounded-2xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-primary section-title">مبررات التحول إلى إدارة المعرفة (ص 19)</h2>
+                    <ul class="custom-list text-gray-700 grid md:grid-cols-2 gap-x-4">
+                        <li>تعاظم دور المعرفة في نجاح المنظمة.</li>
+                        <li>العولمة وتسهيل نظم الاتصال.</li>
+                        <li>إدراك القيمة الحقيقية بعيدة المدى للمعرفة.</li>
+                        <li>التغير السريع في أذواق واتجاهات الزبائن.</li>
+                        <li>نجاح إدارة المعرفة في مجالات التنافس والإبداع.</li>
+                        <li>إدراك الأسواق أن المعلوماتية هي مصدر الميزة التنافسية (أهم من الأرض ورأس المال).</li>
+                        <li>ديناميكية الموجودات المعرفية وتعقيد إدارتها.</li>
+                        <li>اختلاف المعرفة وقيمتها المضافة عن مجرد البيانات.</li>
+                    </ul>
+                </section>
+
+                <!-- 8. أهمية وأهداف إدارة المعرفة -->
+                <section class="glass-card rounded-2xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-primary section-title">أهمية وأهداف إدارة المعرفة (ص 20-22)</h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-bold text-lg text-secondary mb-3">🌟 الأهمية:</h3>
+                        <ul class="custom-list text-gray-700">
+                            <li>وسيلة فعالة لاستثمار رأس المال الفكري وتسهيل بلوغ المعرفة للمحتاجين إليها.</li>
+                            <li>فرصة لتخفيض التكاليف وزيادة جودة المنتجات.</li>
+                            <li>حافز لتشجيع القدرات الإبداعية للموارد البشرية.</li>
+                            <li>توفير إطار عمل مثالي لتحقيق ميزة تنافسية مستدامة وتوفير طرق عمل أو سلع جديدة.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-lg text-secondary mb-3">🎯 الأهداف:</h3>
+                        <ul class="custom-list text-gray-700">
+                            <li>إنتاج المعرفة، تخزينها، وإعادة استخدامها.</li>
+                            <li>دعم عوائد الملكية الفكرية والمتاجرة بالابتكارات.</li>
+                            <li>جذب رأس مال فكري لحل مشاكل المنظمة.</li>
+                            <li>بناء بيئة تنظيمية تدعم مشاركة المعرفة.</li>
+                            <li>التحول نحو الاقتصاد العالمي الحديث (اقتصاد المعرفة).</li>
+                            <li>تجميع الأفكار الذكية ونشر أجود الممارسات بالداخل.</li>
+                            <li>بناء قدرات التعلم وانتشار ثقافة المعرفة.</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- التذييل (الفوتر) -->
+            <footer class="mt-12 mb-8">
+                <div class="glass-card py-5 px-6 rounded-2xl text-center border-b-4 border-primary">
+                    <p class="text-primary font-bold text-lg flex items-center justify-center gap-2">
+                        <span>🎓</span> إعداد: <span class="text-secondary">قيس الجازي</span>
+                    </p>
+                    <p class="text-gray-600 font-medium text-sm mt-1">
+                        إشراف: ابراهيم وحمزه
+                    </p>
+                    <p class="text-xs text-gray-400 mt-3 font-semibold">تمنياتنا لكم بالتوفيق والنجاح في الامتحان 💡</p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
